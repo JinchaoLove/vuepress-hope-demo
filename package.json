@@ -1,0 +1,44 @@
+{
+  "name": "JinchaoLi",
+  "version": "2.0.0",
+  "description": "Jinchao Li's Homepage",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "src:build": "vuepress build src",
+    "src:clean-dev": "vuepress dev src --clean-cache",
+    "src:dev": "vuepress dev src",
+    "src:update": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.63",
+    "@vuepress/core": "2.0.0-beta.63",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.63",
+    "@vuepress/plugin-google-analytics": "2.0.0-beta.63",
+    "@vuepress/plugin-shiki": "2.0.0-beta.63",
+    "@vuepress/shared": "2.0.0-beta.63",
+    "@vuepress/utils": "2.0.0-beta.63",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2",
+    "vuepress": "2.0.0-beta.63",
+    "vuepress-shared": "2.0.0-beta.228",
+    "vuepress-theme-hope": "2.0.0-beta.228",
+    "vuepress-plugin-blog2": "2.0.0-beta.228",
+    "vuepress-plugin-comment2": "2.0.0-beta.228",
+    "vuepress-plugin-search-pro": "2.0.0-beta.228"
+  },
+  "dependencies": {
+    "@moefy-canvas/core": "^0.5.2",
+    "@moefy-canvas/theme-popper": "^0.5.2"
+  },
+  "packageManager": "pnpm@8.6.0",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@types/react",
+        "react",
+        "react-dom"
+      ]
+    }
+  }
+}

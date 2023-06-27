@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "module": "esnext",
+    "target": "ES2020",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@node_modules/*": ["node_modules/*"],
+      "@node-theme-lib/*": ["node_modules/vuepress-theme-hope/lib/*"],
+      "@node-theme-lib-client/*": ["node_modules/vuepress-theme-hope/lib/client/*"],
+    },
+    "types": [
+      "@vuepress/client/types"
+    ]
+  },
+  "include": [
+    "env.d.ts",
+    "src/.vuepress/**/*.ts",
+    "src/.vuepress/**/*.js",
+    "src/.vuepress/**/*.vue"
+  ],
+  "exclude": ["node_modules", "dist", "draft"]
+}
