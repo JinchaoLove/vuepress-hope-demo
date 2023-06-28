@@ -6,7 +6,7 @@ tag:
   - encryption
 ---
 
-# Encryption Article
+# Encryption Article (Passward: 1234)
 
 The actual article content.
 

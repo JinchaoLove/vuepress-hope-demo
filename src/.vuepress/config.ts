@@ -24,6 +24,11 @@ export default defineUserConfig({
       title: "Blog Demo",
       description: "A blog demo for vuepress-theme-hope",
     },
+    "/zh/": {
+      lang: "zh-CN",
+      title: "博客演示",
+      description: "vuepress-theme-hope 的博客演示",
+    },
   },
 
   theme,
@@ -49,6 +54,7 @@ export default defineUserConfig({
         numParticles: 10,
       },
     }),
+    // Search
     searchProPlugin({
       // index all content
       indexContent: true,

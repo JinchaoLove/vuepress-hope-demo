@@ -7,10 +7,7 @@
     "target": "ES2020",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "@node_modules/*": ["node_modules/*"],
-      "@node-theme-lib/*": ["node_modules/vuepress-theme-hope/lib/*"],
-      "@node-theme-lib-client/*": ["node_modules/vuepress-theme-hope/lib/client/*"],
+      "@theme-hope/*": ["../../packages/theme/src/client/*.js"]
     },
     "types": [
       "@vuepress/client/types"

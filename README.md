@@ -25,6 +25,8 @@ Clone or fork this repo, modify to your favorite styles. [More demos](https://gi
 
    For deployment on `Github Pages`, `Vercel` and others, view the [deployment](https://vuejs.press/guide/deployment.html).
 
+   (Note that `build command` is `pnpm src:build`, `publish directory` is `src/.vuepress/dist` here.)
+
 5. Other Plugins
 
    For enhancements of `comment`, `search` and others, view the [plugins](https://theme-hope.vuejs.press/config/plugins/intro.html)
