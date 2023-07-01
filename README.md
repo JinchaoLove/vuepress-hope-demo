@@ -8,8 +8,9 @@ Developed based on the [vuepress2.x](https://v2.vuepress.vuejs.org) framework an
 workspace
 ├── src # Blog sources
 │   ├── .vuepress # Vuepress related configurations
-│   │   ├── theme.js # Theme configuration
-│   │   ├── config.js # User configuration
+│   │   ├── theme.ts # Theme configuration
+│   │   ├── config.ts # User configuration
+│   │   ├── client.ts # Client configuration
 │   │   ...
 │   └── posts, demo, etc. # Blog dirs or files
 │       ├── xxx.md

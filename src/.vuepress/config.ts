@@ -39,6 +39,10 @@ export default defineUserConfig({
       __dirname,
       "./components/BloggerInfo"
     ),
+    "@theme-hope/modules/blog/components/CommonWrapper": path.resolve(
+      __dirname,
+      "./components/CommonWrapper"
+    ),
   },
 
   plugins: [

@@ -13,6 +13,8 @@ import {
   useTimelines,
 } from "@theme-hope/modules/blog/composables/index";
 
+// [Issue: Fail to resolve import](https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/2961)
+// Do not import any `node` side code at `client`, here we copy the `*.scss` locally
 import "../styles/blogger-info.scss";
 
 export default defineComponent({
