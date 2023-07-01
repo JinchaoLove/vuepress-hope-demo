@@ -5,7 +5,6 @@ import theme from "./theme.js";
 
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
 import { PopperShape } from "@moefy-canvas/theme-popper";
-import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 const __dirname = getDirname(import.meta.url);
@@ -15,7 +14,7 @@ export default defineUserConfig({
   base,
 
   dest: path.resolve(__dirname, "./dist"),
-  // port: 6666,
+  // port: 8080,
   shouldPrefetch: false,
 
   locales: {
@@ -32,8 +31,9 @@ export default defineUserConfig({
   },
 
   theme,
-  // add or override theme `components`, `layouts`, `modules`, etc.
-  // https://theme-hope.vuejs.press/guide/advanced/replace.html
+  // add or override theme `components`, `layouts`, `modules`, etc. (*.ts files, not *.d.ts)
+  // in [@theme-hope](https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/main/packages/theme/src/client),
+  // see the [guide](https://theme-hope.vuejs.press/guide/advanced/replace.html)
   alias: {
     "@theme-hope/modules/blog/components/BloggerInfo": path.resolve(
       __dirname,
@@ -42,10 +42,6 @@ export default defineUserConfig({
   },
 
   plugins: [
-    // Code highlight
-    shikiPlugin({
-      theme: "one-dark-pro",
-    }),
     // Click effects
     popperPlugin({
       config: {

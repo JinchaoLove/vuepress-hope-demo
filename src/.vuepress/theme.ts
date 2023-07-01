@@ -118,7 +118,8 @@ export default hopeTheme(
     },
 
     plugins: {
-      prismjs: false,
+      // Code highlight (default themes enabled: one-light, one-dark)
+      // prismjs: false,
       // seo: ,
       blog: {
         type: [
